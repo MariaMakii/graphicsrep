@@ -39,7 +39,7 @@ function Diagram (n) {
     function f(x) { //Вычисление нужной функции
         k = 0;
         for(let j = 1; j <= n; j++){
-            y1 = 7*(Math.pow(-1, j)-1)*Math.cos(j*x)/(Math.pow(j, 2)*Math.PI) + ((1-7*Math.PI)*Math.pow(-1, j) - 1)*Math.sin(j*x)/Math.PI*j;
+            y1 = (7*(Math.pow(-1, j)-1)*Math.cos(j*x))/(Math.pow(j, 2)*Math.PI) + (((1-7*Math.PI)*Math.pow(-1, j) - 1)*Math.sin(j*x))/(Math.PI*j);
             k += y1; 
            // console.log("n = " + j + "\nx = " + x + "\ny = " + y1)
         }
